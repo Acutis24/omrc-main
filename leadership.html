@@ -4,6 +4,8 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Leadership &mdash; OMRC</title>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -13,11 +15,28 @@
     <a href="index.html" class="nav-brand"><img src="logo.png" alt="OMRC"/> OMRC</a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="leadership.html" class="active">Leadership</a></li>
-      <li><a href="constitution.html">Constitution</a></li>
+      <li class="has-menu">
+        <button type="button" class="nav-top active" aria-expanded="false" aria-haspopup="true">The Order <span class="caret">▾</span></button>
+        <ul class="nav-menu">
+          <li><a href="about.html">About the Order</a></li>
+          <li><a href="leadership.html" class="active">Leadership</a></li>
+          <li><a href="Provinces.html">Provinces</a></li>
+          <li><a href="constitution.html">Constitution</a></li>
+          <li><a href="patroness.html">Our Patroness</a></li>
+          <li><a href="co-patron.html">Our Co-Patron</a></li>
+        </ul>
+      </li>
+      <li class="has-menu">
+        <button type="button" class="nav-top" aria-expanded="false" aria-haspopup="true">Apostolates <span class="caret">▾</span></button>
+        <ul class="nav-menu">
+          <li><a href="healthcare.html">Healthcare</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="faith.html">Faith &amp; Publishing</a></li>
+          <li><a href="fraternity.html">Fraternity</a></li>
+        </ul>
+      </li>
       <li><a href="shop.html">Shop</a></li>
-      <li><a href="apply.html">Apply</a></li>
+      <li><a href="apply.html">Join the Order</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
@@ -48,6 +67,7 @@
     <h2>Ranks and Offices of the Order</h2>
     <p class="intro-text">The Order is ordered in five grades of twelve ranks. Each rank is set down here with its title in the vernacular and in Latin, the tongue of the Church and of this Order.</p>
     <p>Its territory descends in three degrees: the <strong style="color:var(--white)">province</strong>, governed by a Grand Chancellor; the <strong style="color:var(--white)">district</strong> within it, governed by a Prior Provincial; and within the district the <strong style="color:var(--white)">commandery</strong>, the local body in which the daily life of the Order is lived.</p>
+    <p>The Order receives both men and women. The rank of <strong style="color:var(--white)">Dame</strong> &mdash; the ninth &mdash; is the highest to which a woman may be raised; the offices above it are held by men.</p>
 
     <div class="tier">
       <div class="tier-head">
@@ -122,7 +142,7 @@
         <div class="rank-body">
           <span class="rank-title">Commander</span>
           <span class="rank-latin">Praefectus</span>
-          <p>Leads a commandery &mdash; the smaller body within a district, and the level at which the ordinary life of the Order is lived. The Commander directs its members in the three apostolates of healthcare, education, and the Faith, and answers for their discipline and their works to the Prior Provincial of the district.</p>
+          <p>Leads a commandery &mdash; the smaller body within a district, and the level at which the ordinary life of the Order is lived. The Commander directs its members in the four apostolates of healthcare, education, the Faith, and fraternity, and answers for their discipline and their works to the Prior Provincial of the district.</p>
         </div>
       </div>
 
@@ -156,7 +176,7 @@
         <div class="rank-body">
           <span class="rank-title">Knight &bull; Dame</span>
           <span class="rank-latin">Miles &bull; Domina</span>
-          <p>The fully professed member of the Order, having made its promises and been received in full. Knights and Dames are the body of the Order &mdash; bound to the daily Rosary, the Brown Scapular, the First Saturdays, and the works of mercy to which the OMRC is committed.</p>
+          <p>The fully professed member of the Order, having made its promises and been received in full. Knights and Dames are the body of the Order &mdash; bound to the daily Rosary, the First Saturdays, and the works of mercy to which the OMRC is committed. The rank of Dame is the highest to which a woman may be raised in this Order.</p>
         </div>
       </div>
 
@@ -182,7 +202,7 @@
         <div class="rank-body">
           <span class="rank-title">Postulant</span>
           <span class="rank-latin">Postulans</span>
-          <p>The novice of the Order. The Postulant has been admitted to formation and is under instruction in the Rule of Life, the devotions of the Order, and the apostolates in which he will serve, preparing for profession in the first degree.</p>
+          <p>The novice of the Order. The Postulant has been admitted to formation and is under instruction in the Rule of Life, the devotions of the Order, and the apostolates in which they will serve, preparing for profession in the first degree.</p>
         </div>
       </div>
 
@@ -191,7 +211,7 @@
         <div class="rank-body">
           <span class="rank-title">Aspirant</span>
           <span class="rank-latin">Aspirante</span>
-          <p>One who has petitioned to enter the Order and stands at its threshold in his first semester. The Aspirant discerns, under guidance and in prayer, whether Our Lady is calling him to serve beneath her mantle in this Order.</p>
+          <p>One who has petitioned to enter the Order and stands at its threshold in their first semester. The Aspirant discerns, under guidance and in prayer, whether Our Lady is calling them to serve beneath her mantle in this Order.</p>
         </div>
       </div>
     </div>
@@ -231,13 +251,20 @@
       <li><a href="index.html">Home</a></li><li><span class="footer-divider">&bull;</span></li>
       <li><a href="about.html">About</a></li><li><span class="footer-divider">&bull;</span></li>
       <li><a href="leadership.html">Leadership</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="Provinces.html">Provinces</a></li><li><span class="footer-divider">&bull;</span></li>
       <li><a href="constitution.html">Constitution</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="healthcare.html">Healthcare</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="education.html">Education</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="faith.html">Faith</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="fraternity.html">Fraternity</a></li><li><span class="footer-divider">&bull;</span></li>
       <li><a href="shop.html">Shop</a></li><li><span class="footer-divider">&bull;</span></li>
       <li><a href="apply.html">Apply</a></li><li><span class="footer-divider">&bull;</span></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
 </footer>
+
+<script src="site.js"></script>
 
 </body>
 </html>

@@ -4,6 +4,8 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Constitution &mdash; OMRC</title>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -13,11 +15,28 @@
     <a href="index.html" class="nav-brand"><img src="logo.png" alt="OMRC"/> OMRC</a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="leadership.html">Leadership</a></li>
-      <li><a href="constitution.html" class="active">Constitution</a></li>
+      <li class="has-menu">
+        <button type="button" class="nav-top active" aria-expanded="false" aria-haspopup="true">The Order <span class="caret">▾</span></button>
+        <ul class="nav-menu">
+          <li><a href="about.html">About the Order</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+          <li><a href="Provinces.html">Provinces</a></li>
+          <li><a href="constitution.html" class="active">Constitution</a></li>
+          <li><a href="patroness.html">Our Patroness</a></li>
+          <li><a href="co-patron.html">Our Co-Patron</a></li>
+        </ul>
+      </li>
+      <li class="has-menu">
+        <button type="button" class="nav-top" aria-expanded="false" aria-haspopup="true">Apostolates <span class="caret">▾</span></button>
+        <ul class="nav-menu">
+          <li><a href="healthcare.html">Healthcare</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="faith.html">Faith &amp; Publishing</a></li>
+          <li><a href="fraternity.html">Fraternity</a></li>
+        </ul>
+      </li>
       <li><a href="shop.html">Shop</a></li>
-      <li><a href="apply.html">Apply</a></li>
+      <li><a href="apply.html">Join the Order</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
@@ -59,13 +78,20 @@
       <li><a href="index.html">Home</a></li><li><span class="footer-divider">&bull;</span></li>
       <li><a href="about.html">About</a></li><li><span class="footer-divider">&bull;</span></li>
       <li><a href="leadership.html">Leadership</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="Provinces.html">Provinces</a></li><li><span class="footer-divider">&bull;</span></li>
       <li><a href="constitution.html">Constitution</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="healthcare.html">Healthcare</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="education.html">Education</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="faith.html">Faith</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="fraternity.html">Fraternity</a></li><li><span class="footer-divider">&bull;</span></li>
       <li><a href="shop.html">Shop</a></li><li><span class="footer-divider">&bull;</span></li>
       <li><a href="apply.html">Apply</a></li><li><span class="footer-divider">&bull;</span></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
 </footer>
+
+<script src="site.js"></script>
 
 </body>
 </html>

@@ -4,23 +4,39 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ordo Militantium Reginae Caeli</title>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
 <nav>
   <div class="nav-inner">
-    <a href="index.html" class="nav-brand">
-      <img src="logo.png" alt="OMRC"/>
-      OMRC
-    </a>
+    <a href="index.html" class="nav-brand"><img src="logo.png" alt="OMRC"/> OMRC</a>
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="leadership.html">Leadership</a></li>
-      <li><a href="constitution.html">Constitution</a></li>
+      <li class="has-menu">
+        <button type="button" class="nav-top" aria-expanded="false" aria-haspopup="true">The Order <span class="caret">▾</span></button>
+        <ul class="nav-menu">
+          <li><a href="about.html">About the Order</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+          <li><a href="Provinces.html">Provinces</a></li>
+          <li><a href="constitution.html">Constitution</a></li>
+          <li><a href="patroness.html">Our Patroness</a></li>
+          <li><a href="co-patron.html">Our Co-Patron</a></li>
+        </ul>
+      </li>
+      <li class="has-menu">
+        <button type="button" class="nav-top" aria-expanded="false" aria-haspopup="true">Apostolates <span class="caret">▾</span></button>
+        <ul class="nav-menu">
+          <li><a href="healthcare.html">Healthcare</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="faith.html">Faith &amp; Publishing</a></li>
+          <li><a href="fraternity.html">Fraternity</a></li>
+        </ul>
+      </li>
       <li><a href="shop.html">Shop</a></li>
-      <li><a href="apply.html">Apply</a></li>
+      <li><a href="apply.html">Join the Order</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
@@ -56,33 +72,50 @@
   <div class="section-inner narrow text-center">
     <span class="section-label">Who We Are</span>
     <h2>A Catholic Militant Order</h2>
-    <p class="intro-text">The <strong style="color:var(--white)">Ordo Militantium Reginae Caeli (OMRC)</strong> is a Catholic Militant Order dedicated to the defense and proclamation of the Traditional Faith, under the patronage of the Blessed Virgin Mary, Queen of Heaven, and the intercession of the Venerable Fulton J. Sheen. Founded in fidelity to the Pre&#8209;Vatican&nbsp;II liturgical tradition, the Order wages its battle not in arms, but through charity, truth, and sacrifice — serving those in need through apostolates in healthcare, education, and the Faith. Through its publishing work under the <strong style="color:var(--white)">Collegium Reginae Caeli</strong>, the OMRC produces sacred and catechetical materials to restore all things in Christ, led by its founding Custos Generalis under its motto <em style="color:var(--gold)">"Sub tuum Praesidium."</em></p>
+    <p class="intro-text">The <strong style="color:var(--white)">Ordo Militantium Reginae Caeli (OMRC)</strong> is a Catholic Militant Order dedicated to the defense and proclamation of the Traditional Faith, under the patronage of the Blessed Virgin Mary, Queen of Heaven, and the intercession of the Venerable Fulton J. Sheen. Founded in fidelity to the Pre&#8209;Vatican&nbsp;II liturgical tradition, the Order wages its battle not in arms, but through charity, truth, and sacrifice — serving those in need through apostolates in healthcare, education, the Faith, and fraternity. Through its publishing work under the <strong style="color:var(--white)">Collegium Reginae Caeli</strong>, the OMRC produces sacred and catechetical materials to restore all things in Christ, led by its founding Custos Generalis under its motto <em style="color:var(--gold)">"Sub tuum Praesidium."</em></p>
     <a href="about.html" class="btn">Learn More About the Order</a>
   </div>
 </section>
 
-<!-- Three Apostolates -->
+<!-- Four Apostolates -->
 <section class="section">
   <div class="section-inner wide">
     <span class="section-label" style="text-align:center; display:block;">Our Mission</span>
-    <h2 style="text-align:center;">Three Apostolates, One Spirit</h2>
+    <h2 style="text-align:center;">Four Apostolates, One Spirit</h2>
     <p class="intro-text text-center">Militant in spirit but never in arms, the OMRC goes forth as soldiers of Christ and servants of Our Lady — fighting through prayer, sacrifice, and works of mercy.</p>
     <div class="pillars">
-      <div class="pillar-card">
-        <span class="pillar-icon">✚</span>
-        <h3>Healthcare</h3>
-        <p>Following the example of those who gave freely of their gifts for the love of God, the Order serves the sick and suffering without distinction — bringing both physical care and spiritual consolation to those most in need.</p>
-      </div>
-      <div class="pillar-card">
-        <span class="pillar-icon">✦</span>
-        <h3>Education</h3>
-        <p>Forming minds and souls in the fullness of the Catholic intellectual tradition — from the catechism to the great Scholastics — committed to passing on the Faith whole, intact, and undiminished to the next generation.</p>
-      </div>
-      <div class="pillar-card">
-        <span class="pillar-icon">☩</span>
-        <h3>Faith</h3>
-        <p>Through the Collegium Reginae Caeli, our printing and publishing house, the OMRC produces sacred, devotional, and catechetical materials to nourish the faithful and restore all things in Christ.</p>
-      </div>
+      <a class="card-link" href="healthcare.html" aria-label="The Healthcare Apostolate">
+        <div class="pillar-card">
+          <span class="pillar-icon">✚</span>
+          <h3>Healthcare</h3>
+          <p>Following the example of those who gave freely of their gifts for the love of God, the Order serves the sick and suffering without distinction — bringing both physical care and spiritual consolation to those most in need.</p>
+          <span class="card-more">Read more &rarr;</span>
+        </div>
+      </a>
+      <a class="card-link" href="education.html" aria-label="The Education Apostolate">
+        <div class="pillar-card">
+          <span class="pillar-icon">✦</span>
+          <h3>Education</h3>
+          <p>Forming minds and souls in the fullness of the Catholic intellectual tradition — from the catechism to the great Scholastics — committed to passing on the Faith whole, intact, and undiminished to the next generation.</p>
+          <span class="card-more">Read more &rarr;</span>
+        </div>
+      </a>
+      <a class="card-link" href="faith.html" aria-label="The Apostolate of the Faith">
+        <div class="pillar-card">
+          <span class="pillar-icon">☩</span>
+          <h3>Faith</h3>
+          <p>Through the Collegium Reginae Caeli, our printing and publishing house, the OMRC produces sacred, devotional, and catechetical materials to nourish the faithful and restore all things in Christ.</p>
+          <span class="card-more">Read more &rarr;</span>
+        </div>
+      </a>
+      <a class="card-link" href="fraternity.html" aria-label="The Fraternity Apostolate">
+        <div class="pillar-card">
+          <span class="pillar-icon">✠</span>
+          <h3>Fraternity</h3>
+          <p>A fraternal life in common &mdash; the college fraternity restored to Christian purpose. Built upon the Faith rather than the lodge, and set against the vices such houses have come to excuse, its chapters bind their members in prayer and true friendship, then turn that brotherhood outward in charity and philanthropy toward their communities and society.</p>
+          <span class="card-more">Read more &rarr;</span>
+        </div>
+      </a>
     </div>
   </div>
 </section>
@@ -93,16 +126,22 @@
     <span class="section-label" style="text-align:center; display:block;">Under Their Protection</span>
     <h2 style="text-align:center;">Our Patroness &amp; Co-Patron</h2>
     <div class="patron-grid">
-      <div class="patron-card">
-        <div class="patron-icon">&#10038;</div>
-        <h3>The Blessed Virgin Mary</h3>
-        <p>Queen of Heaven, Star of the Sea, Mother of God. Under her mantle we take refuge. Under her banner we march. Our devotion to her is the heart and soul of this Order.</p>
-      </div>
-      <div class="patron-card">
-        <div class="patron-icon">&#9768;</div>
-        <h3>Venerable Fulton J. Sheen</h3>
-        <p>Apostle of the modern age, titan of the Faith, and devoted servant of Our Lady. His life of fearless witness and deep Marian devotion is the model we carry into every battle.</p>
-      </div>
+      <a class="card-link" href="patroness.html" aria-label="Our Patroness">
+        <div class="patron-card">
+          <div class="patron-icon">&#10038;</div>
+          <h3>The Blessed Virgin Mary</h3>
+          <p>Queen of Heaven, Star of the Sea, Mother of God. Under her mantle we take refuge. Under her banner we march. Our devotion to her is the heart and soul of this Order.</p>
+          <span class="card-more">Read more &rarr;</span>
+        </div>
+      </a>
+      <a class="card-link" href="co-patron.html" aria-label="Our Co-Patron">
+        <div class="patron-card">
+          <div class="patron-icon">&#9768;</div>
+          <h3>Venerable Fulton J. Sheen</h3>
+          <p>Apostle of the modern age, titan of the Faith, and devoted servant of Our Lady. His life of fearless witness and deep Marian devotion is the model we carry into every battle.</p>
+          <span class="card-more">Read more &rarr;</span>
+        </div>
+      </a>
     </div>
   </div>
 </section>
@@ -138,22 +177,23 @@
     <span class="footer-name">Ordo Militantium Reginae Caeli &mdash; OMRC</span>
     <p>Collegium Reginae Caeli &bull; <em>Sub tuum Praesidium</em></p>
     <ul class="footer-links">
-      <li><a href="index.html">Home</a></li>
-      <li><span class="footer-divider">&bull;</span></li>
-      <li><a href="about.html">About</a></li>
-      <li><span class="footer-divider">&bull;</span></li>
-      <li><a href="leadership.html">Leadership</a></li>
-      <li><span class="footer-divider">&bull;</span></li>
-      <li><a href="constitution.html">Constitution</a></li>
-      <li><span class="footer-divider">&bull;</span></li>
-      <li><a href="shop.html">Shop</a></li>
-      <li><span class="footer-divider">&bull;</span></li>
-      <li><a href="apply.html">Apply</a></li>
-      <li><span class="footer-divider">&bull;</span></li>
+      <li><a href="index.html">Home</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="about.html">About</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="leadership.html">Leadership</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="Provinces.html">Provinces</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="constitution.html">Constitution</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="healthcare.html">Healthcare</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="education.html">Education</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="faith.html">Faith</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="fraternity.html">Fraternity</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="shop.html">Shop</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="apply.html">Apply</a></li><li><span class="footer-divider">&bull;</span></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
 </footer>
+
+<script src="site.js"></script>
 
 </body>
 </html>
