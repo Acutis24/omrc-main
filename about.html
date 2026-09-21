@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="The history, mission, and governing spirit of the Ordo Militantium Reginae Caeli — a Catholic Militant Order founded in fidelity to the Pre-Vatican II liturgical tradition."/>
   <title>About the Order &mdash; OMRC</title>
   <link rel="icon" type="image/png" href="favicon.png"/>
   <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
-  <link rel="stylesheet" href="style.css?v=2"/>
+  <link rel="stylesheet" href="style.css?v=6"/>
 </head>
 <body>
 
@@ -16,8 +17,8 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li class="has-menu">
-        <button type="button" class="nav-top active" aria-expanded="false" aria-haspopup="true">The Order <span class="caret">▾</span></button>
-        <ul class="nav-menu">
+        <button type="button" class="nav-top active" aria-expanded="false" aria-controls="nav-order">The Order <span class="caret">▾</span></button>
+        <ul class="nav-menu" id="nav-order">
           <li><a href="about.html" class="active">About the Order</a></li>
           <li><a href="leadership.html">Leadership</a></li>
           <li><a href="Provinces.html">Provinces</a></li>
@@ -27,8 +28,8 @@
         </ul>
       </li>
       <li class="has-menu">
-        <button type="button" class="nav-top" aria-expanded="false" aria-haspopup="true">Apostolates <span class="caret">▾</span></button>
-        <ul class="nav-menu">
+        <button type="button" class="nav-top" aria-expanded="false" aria-controls="nav-apostolates">Apostolates <span class="caret">▾</span></button>
+        <ul class="nav-menu" id="nav-apostolates">
           <li><a href="healthcare.html">Healthcare</a></li>
           <li><a href="education.html">Education</a></li>
           <li><a href="faith.html">Faith &amp; Publishing</a></li>
@@ -94,9 +95,9 @@
   <div class="section-inner">
     <span class="section-label">Our Publishing House</span>
     <h2>Collegium Reginae Caeli</h2>
-    <p>The printing and publishing apostolate of the Order operates under the name <strong style="color:var(--white)">Collegium Reginae Caeli</strong> — the College of the Queen of Heaven. Through this house, the OMRC produces sacred art, devotional materials, catechetical texts, and liturgical resources faithful to the Traditional Roman Rite.</p>
+    <p>The printing and publishing apostolate of the Order operates under the name <strong>Collegium Reginae Caeli</strong> — the College of the Queen of Heaven. Through this house, the OMRC produces sacred art, devotional materials, catechetical texts, and liturgical resources faithful to the Traditional Roman Rite.</p>
     <p>In an age of spiritual confusion and doctrinal ambiguity, we believe that beautiful, orthodox, traditionally rooted Catholic materials serve as both a shield for the faithful and a lamp in the darkness. Every publication that bears our name is offered under the protection of Our Lady and to the greater glory of God.</p>
-    <div class="btn-group" style="justify-content:flex-start;">
+    <div class="btn-group is-start">
       <a href="shop.html" class="btn">Visit the Shop</a>
     </div>
   </div>
@@ -120,17 +121,17 @@
     <span class="footer-name">Ordo Militantium Reginae Caeli &mdash; OMRC</span>
     <p>Collegium Reginae Caeli &bull; <em>Sub tuum Praesidium</em></p>
     <ul class="footer-links">
-      <li><a href="index.html">Home</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="about.html">About</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="leadership.html">Leadership</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="Provinces.html">Provinces</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="constitution.html">Constitution</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="healthcare.html">Healthcare</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="education.html">Education</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="faith.html">Faith</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="fraternity.html">Fraternity</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="shop.html">Shop</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="apply.html">Apply</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="Provinces.html">Provinces</a></li>
+      <li><a href="constitution.html">Constitution</a></li>
+      <li><a href="healthcare.html">Healthcare</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="faith.html">Faith</a></li>
+      <li><a href="fraternity.html">Fraternity</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="apply.html">Apply</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>

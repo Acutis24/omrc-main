@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="The Apostolate of the Faith, carried through the Collegium Reginae Caeli — the printing and publishing house of the Order, producing sacred art, catechetical texts, and liturgical resources."/>
   <title>Faith and Publishing &mdash; OMRC</title>
   <link rel="icon" type="image/png" href="favicon.png"/>
   <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
-  <link rel="stylesheet" href="style.css?v=2"/>
+  <link rel="stylesheet" href="style.css?v=6"/>
 </head>
 <body>
 
@@ -16,8 +17,8 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li class="has-menu">
-        <button type="button" class="nav-top" aria-expanded="false" aria-haspopup="true">The Order <span class="caret">▾</span></button>
-        <ul class="nav-menu">
+        <button type="button" class="nav-top" aria-expanded="false" aria-controls="nav-order">The Order <span class="caret">▾</span></button>
+        <ul class="nav-menu" id="nav-order">
           <li><a href="about.html">About the Order</a></li>
           <li><a href="leadership.html">Leadership</a></li>
           <li><a href="Provinces.html">Provinces</a></li>
@@ -27,8 +28,8 @@
         </ul>
       </li>
       <li class="has-menu">
-        <button type="button" class="nav-top active" aria-expanded="false" aria-haspopup="true">Apostolates <span class="caret">▾</span></button>
-        <ul class="nav-menu">
+        <button type="button" class="nav-top active" aria-expanded="false" aria-controls="nav-apostolates">Apostolates <span class="caret">▾</span></button>
+        <ul class="nav-menu" id="nav-apostolates">
           <li><a href="healthcare.html">Healthcare</a></li>
           <li><a href="education.html">Education</a></li>
           <li><a href="faith.html" class="active">Faith &amp; Publishing</a></li>
@@ -51,7 +52,7 @@
   <div class="section-inner">
     <span class="section-label">Collegium Reginae Caeli</span>
     <h2>The Printing and Publishing House of the Order</h2>
-    <p class="drop-cap">The apostolate of the Faith is carried chiefly through the <strong style="color:var(--white)">Collegium Reginae Caeli</strong> &mdash; the College of the Queen of Heaven &mdash; the printing and publishing house of the Order. Through it the OMRC produces sacred art, devotional materials, catechetical texts, and liturgical resources faithful to the Traditional Roman Rite.</p>
+    <p class="drop-cap">The apostolate of the Faith is carried chiefly through the <strong>Collegium Reginae Caeli</strong> &mdash; the College of the Queen of Heaven &mdash; the printing and publishing house of the Order. Through it the OMRC produces sacred art, devotional materials, catechetical texts, and liturgical resources faithful to the Traditional Roman Rite.</p>
     <p>The press has always been a battlefield. What is printed is what endures, what is handed on, what forms the imagination of the faithful long after the argument that produced it is forgotten. In an age of spiritual confusion and doctrinal ambiguity, beautiful and orthodox Catholic materials are both a shield for the faithful and a lamp in the darkness.</p>
     <p>Every publication bearing our name is offered under the protection of Our Lady and to the greater glory of God.</p>
   </div>
@@ -76,7 +77,7 @@
     <h2>The Work in Practice</h2>
     <p>Members write, translate, edit, illustrate, design, print, and distribute. Others sell and ship, keep the accounts, or simply put the finished work into the hands of the faithful who need it. An artist and a bookkeeper serve the same apostolate.</p>
     <p>The shop of the Collegium is being prepared, and its first materials will be offered there.</p>
-    <div class="btn-group" style="justify-content:flex-start; margin-top:1.5rem;">
+    <div class="btn-group is-start">
       <a href="shop.html" class="btn">Visit the Shop</a>
     </div>
   </div>
@@ -100,17 +101,17 @@
     <span class="footer-name">Ordo Militantium Reginae Caeli &mdash; OMRC</span>
     <p>Collegium Reginae Caeli &bull; <em>Sub tuum Praesidium</em></p>
     <ul class="footer-links">
-      <li><a href="index.html">Home</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="about.html">About</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="leadership.html">Leadership</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="Provinces.html">Provinces</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="constitution.html">Constitution</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="healthcare.html">Healthcare</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="education.html">Education</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="faith.html">Faith</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="fraternity.html">Fraternity</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="shop.html">Shop</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="apply.html">Apply</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="Provinces.html">Provinces</a></li>
+      <li><a href="constitution.html">Constitution</a></li>
+      <li><a href="healthcare.html">Healthcare</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="faith.html">Faith</a></li>
+      <li><a href="fraternity.html">Fraternity</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="apply.html">Apply</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>

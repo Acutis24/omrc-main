@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contact the Ordo Militantium Reginae Caeli — enquiries about membership, the apostolates, provinces, and the Collegium Reginae Caeli."/>
   <title>Contact &mdash; OMRC</title>
   <link rel="icon" type="image/png" href="favicon.png"/>
   <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
-  <link rel="stylesheet" href="style.css?v=2"/>
+  <link rel="stylesheet" href="style.css?v=6"/>
 </head>
 <body>
 
@@ -16,8 +17,8 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li class="has-menu">
-        <button type="button" class="nav-top" aria-expanded="false" aria-haspopup="true">The Order <span class="caret">▾</span></button>
-        <ul class="nav-menu">
+        <button type="button" class="nav-top" aria-expanded="false" aria-controls="nav-order">The Order <span class="caret">▾</span></button>
+        <ul class="nav-menu" id="nav-order">
           <li><a href="about.html">About the Order</a></li>
           <li><a href="leadership.html">Leadership</a></li>
           <li><a href="Provinces.html">Provinces</a></li>
@@ -27,8 +28,8 @@
         </ul>
       </li>
       <li class="has-menu">
-        <button type="button" class="nav-top" aria-expanded="false" aria-haspopup="true">Apostolates <span class="caret">▾</span></button>
-        <ul class="nav-menu">
+        <button type="button" class="nav-top" aria-expanded="false" aria-controls="nav-apostolates">Apostolates <span class="caret">▾</span></button>
+        <ul class="nav-menu" id="nav-apostolates">
           <li><a href="healthcare.html">Healthcare</a></li>
           <li><a href="education.html">Education</a></li>
           <li><a href="faith.html">Faith &amp; Publishing</a></li>
@@ -110,7 +111,7 @@
             <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
           </div>
 
-          <button type="submit" class="btn btn-gold" style="margin-top:0.5rem;">Send Message</button>
+          <button type="submit" class="btn btn-gold form-submit">Send Message</button>
 
           <p id="contact-status" class="form-status" role="status" aria-live="polite"></p>
         </form>
@@ -126,73 +127,23 @@
     <span class="footer-name">Ordo Militantium Reginae Caeli &mdash; OMRC</span>
     <p>Collegium Reginae Caeli &bull; <em>Sub tuum Praesidium</em></p>
     <ul class="footer-links">
-      <li><a href="index.html">Home</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="about.html">About</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="leadership.html">Leadership</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="Provinces.html">Provinces</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="constitution.html">Constitution</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="healthcare.html">Healthcare</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="education.html">Education</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="faith.html">Faith</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="fraternity.html">Fraternity</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="shop.html">Shop</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="apply.html">Apply</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="Provinces.html">Provinces</a></li>
+      <li><a href="constitution.html">Constitution</a></li>
+      <li><a href="healthcare.html">Healthcare</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="faith.html">Faith</a></li>
+      <li><a href="fraternity.html">Fraternity</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="apply.html">Apply</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
 </footer>
 
-<script>
-(function () {
-  var form = document.getElementById('contact-form');
-  var status = document.getElementById('contact-status');
-  var button = form.querySelector('button[type="submit"]');
-
-  function show(message, isError) {
-    status.textContent = message;
-    status.classList.add('is-visible');
-    status.classList.toggle('is-error', !!isError);
-  }
-
-  form.addEventListener('submit', async function (event) {
-    event.preventDefault();
-
-    var nameValue = document.getElementById('name').value.trim();
-    var emailValue = document.getElementById('email').value.trim();
-    var messageValue = document.getElementById('message').value.trim();
-
-    if (!nameValue || !emailValue || !messageValue) {
-      show('Please provide your name, email address, and a message before sending.', true);
-      return;
-    }
-
-    button.disabled = true;
-    button.textContent = 'Sending...';
-    status.classList.remove('is-visible');
-
-    try {
-      var response = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify(Object.fromEntries(new FormData(form)))
-      });
-      var result = await response.json();
-
-      if (result.success) {
-        show('Deo gratias. Thank you for reaching out to the Ordo Militantium Reginae Caeli. We will be in touch shortly. Sub tuum Praesidium.', false);
-        form.reset();
-      } else {
-        show('Your message could not be sent. Please try again, or write to us directly.', true);
-      }
-    } catch (error) {
-      show('Your message could not be sent. Please check your connection and try again.', true);
-    } finally {
-      button.disabled = false;
-      button.textContent = 'Send Message';
-    }
-  });
-})();
-</script>
+<script src="forms.js"></script>
 
 <script src="site.js"></script>
 

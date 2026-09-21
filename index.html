@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="The Ordo Militantium Reginae Caeli (OMRC) is a Catholic Militant Order devoted to the Traditional Faith under the patronage of the Blessed Virgin Mary, Queen of Heaven, serving through apostolates in healthcare, education, the Faith, and fraternity."/>
   <title>Ordo Militantium Reginae Caeli</title>
   <link rel="icon" type="image/png" href="favicon.png"/>
   <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
-  <link rel="stylesheet" href="style.css?v=2"/>
+  <link rel="stylesheet" href="style.css?v=6"/>
 </head>
 <body>
 
@@ -16,8 +17,8 @@
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
       <li class="has-menu">
-        <button type="button" class="nav-top" aria-expanded="false" aria-haspopup="true">The Order <span class="caret">▾</span></button>
-        <ul class="nav-menu">
+        <button type="button" class="nav-top" aria-expanded="false" aria-controls="nav-order">The Order <span class="caret">▾</span></button>
+        <ul class="nav-menu" id="nav-order">
           <li><a href="about.html">About the Order</a></li>
           <li><a href="leadership.html">Leadership</a></li>
           <li><a href="Provinces.html">Provinces</a></li>
@@ -27,8 +28,8 @@
         </ul>
       </li>
       <li class="has-menu">
-        <button type="button" class="nav-top" aria-expanded="false" aria-haspopup="true">Apostolates <span class="caret">▾</span></button>
-        <ul class="nav-menu">
+        <button type="button" class="nav-top" aria-expanded="false" aria-controls="nav-apostolates">Apostolates <span class="caret">▾</span></button>
+        <ul class="nav-menu" id="nav-apostolates">
           <li><a href="healthcare.html">Healthcare</a></li>
           <li><a href="education.html">Education</a></li>
           <li><a href="faith.html">Faith &amp; Publishing</a></li>
@@ -72,7 +73,7 @@
   <div class="section-inner narrow text-center">
     <span class="section-label">Who We Are</span>
     <h2>A Catholic Militant Order</h2>
-    <p class="intro-text">The <strong style="color:var(--white)">Ordo Militantium Reginae Caeli (OMRC)</strong> is a Catholic Militant Order dedicated to the defense and proclamation of the Traditional Faith, under the patronage of the Blessed Virgin Mary, Queen of Heaven, and the intercession of the Venerable Fulton J. Sheen. Founded in fidelity to the Pre&#8209;Vatican&nbsp;II liturgical tradition, the Order wages its battle not in arms, but through charity, truth, and sacrifice — serving those in need through apostolates in healthcare, education, the Faith, and fraternity. Through its publishing work under the <strong style="color:var(--white)">Collegium Reginae Caeli</strong>, the OMRC produces sacred and catechetical materials to restore all things in Christ, led by its founding Custos Generalis under its motto <em style="color:var(--gold)">"Sub tuum Praesidium."</em></p>
+    <p class="intro-text">The <strong>Ordo Militantium Reginae Caeli (OMRC)</strong> is a Catholic Militant Order dedicated to the defense and proclamation of the Traditional Faith, under the patronage of the Blessed Virgin Mary, Queen of Heaven, and the intercession of the Venerable Fulton J. Sheen. Founded in fidelity to the Pre&#8209;Vatican&nbsp;II liturgical tradition, the Order wages its battle not in arms, but through charity, truth, and sacrifice — serving those in need through apostolates in healthcare, education, the Faith, and fraternity. Through its publishing work under the <strong>Collegium Reginae Caeli</strong>, the OMRC produces sacred and catechetical materials to restore all things in Christ, led by its founding Custos Generalis under its motto <em class="text-gold">"Sub tuum Praesidium."</em></p>
     <a href="about.html" class="btn">Learn More About the Order</a>
   </div>
 </section>
@@ -80,8 +81,8 @@
 <!-- Four Apostolates -->
 <section class="section">
   <div class="section-inner wide">
-    <span class="section-label" style="text-align:center; display:block;">Our Mission</span>
-    <h2 style="text-align:center;">Four Apostolates, One Spirit</h2>
+    <span class="section-label text-center">Our Mission</span>
+    <h2 class="text-center">Four Apostolates, One Spirit</h2>
     <p class="intro-text text-center">Militant in spirit but never in arms, the OMRC goes forth as soldiers of Christ and servants of Our Lady — fighting through prayer, sacrifice, and works of mercy.</p>
     <div class="pillars">
       <a class="card-link" href="healthcare.html" aria-label="The Healthcare Apostolate">
@@ -123,8 +124,8 @@
 <!-- Patrons -->
 <section class="section-alt">
   <div class="section-inner wide">
-    <span class="section-label" style="text-align:center; display:block;">Under Their Protection</span>
-    <h2 style="text-align:center;">Our Patroness &amp; Co-Patron</h2>
+    <span class="section-label text-center">Under Their Protection</span>
+    <h2 class="text-center">Our Patroness &amp; Co-Patron</h2>
     <div class="patron-grid">
       <a class="card-link" href="patroness.html" aria-label="Our Patroness">
         <div class="patron-card">
@@ -150,7 +151,7 @@
 <section class="section">
   <div class="section-inner narrow text-center">
     <div class="ornament">✦ ✦ ✦</div>
-    <blockquote style="text-align:left;">
+    <blockquote class="text-left">
       "The salvation of the world began through Mary and through Mary it must be accomplished."
       <cite>&mdash; St. Louis de Montfort</cite>
     </blockquote>
@@ -177,17 +178,17 @@
     <span class="footer-name">Ordo Militantium Reginae Caeli &mdash; OMRC</span>
     <p>Collegium Reginae Caeli &bull; <em>Sub tuum Praesidium</em></p>
     <ul class="footer-links">
-      <li><a href="index.html">Home</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="about.html">About</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="leadership.html">Leadership</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="Provinces.html">Provinces</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="constitution.html">Constitution</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="healthcare.html">Healthcare</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="education.html">Education</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="faith.html">Faith</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="fraternity.html">Fraternity</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="shop.html">Shop</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="apply.html">Apply</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="Provinces.html">Provinces</a></li>
+      <li><a href="constitution.html">Constitution</a></li>
+      <li><a href="healthcare.html">Healthcare</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="faith.html">Faith</a></li>
+      <li><a href="fraternity.html">Fraternity</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="apply.html">Apply</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>

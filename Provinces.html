@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="The Ordo Militantium Reginae Caeli is divided into three provinces — Western, Eastern, and Southern — across the United States and Canada, each governed by a Grand Chancellor."/>
   <title>Provinces &mdash; OMRC</title>
   <link rel="icon" type="image/png" href="favicon.png"/>
   <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
-  <link rel="stylesheet" href="style.css?v=2"/>
+  <link rel="stylesheet" href="style.css?v=6"/>
 </head>
 <body>
 
@@ -16,8 +17,8 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li class="has-menu">
-        <button type="button" class="nav-top active" aria-expanded="false" aria-haspopup="true">The Order <span class="caret">▾</span></button>
-        <ul class="nav-menu">
+        <button type="button" class="nav-top active" aria-expanded="false" aria-controls="nav-order">The Order <span class="caret">▾</span></button>
+        <ul class="nav-menu" id="nav-order">
           <li><a href="about.html">About the Order</a></li>
           <li><a href="leadership.html">Leadership</a></li>
           <li><a href="Provinces.html" class="active">Provinces</a></li>
@@ -27,8 +28,8 @@
         </ul>
       </li>
       <li class="has-menu">
-        <button type="button" class="nav-top" aria-expanded="false" aria-haspopup="true">Apostolates <span class="caret">▾</span></button>
-        <ul class="nav-menu">
+        <button type="button" class="nav-top" aria-expanded="false" aria-controls="nav-apostolates">Apostolates <span class="caret">▾</span></button>
+        <ul class="nav-menu" id="nav-apostolates">
           <li><a href="healthcare.html">Healthcare</a></li>
           <li><a href="education.html">Education</a></li>
           <li><a href="faith.html">Faith &amp; Publishing</a></li>
@@ -51,10 +52,10 @@
   <div class="section-inner">
     <span class="section-label">The Territory of the Order</span>
     <h2>Three Provinces, One Order</h2>
-    <p class="drop-cap">The Ordo Militantium Reginae Caeli is spread across the United States and Canada, and for its governance that territory is divided into three <strong style="color:var(--white)">provinces</strong> &mdash; Western, Eastern, and Southern.</p>
-    <p>A province is the largest territorial division of the Order. Each is governed by a <strong style="color:var(--white)">Grand Chancellor</strong>, who holds authority over everything within it and answers for it to the General Council. Beneath the province lies the <strong style="color:var(--white)">district</strong>, governed by a Prior Provincial; and within the district the <strong style="color:var(--white)">commandery</strong>, the local body in which the daily life of the Order is actually lived.</p>
+    <p class="drop-cap">The Ordo Militantium Reginae Caeli is spread across the United States and Canada, and for its governance that territory is divided into three <strong>provinces</strong> &mdash; Western, Eastern, and Southern.</p>
+    <p>A province is the largest territorial division of the Order. Each is governed by a <strong>Grand Chancellor</strong>, who holds authority over everything within it and answers for it to the General Council. Beneath the province lies the <strong>district</strong>, governed by a Prior Provincial; and within the district the <strong>commandery</strong>, the local body in which the daily life of the Order is actually lived.</p>
     <p>The divisions are practical rather than sentimental. They exist so that no member is too far from a superior who knows him, and so that the works of the Order in healthcare, education, the Faith, and fraternity are carried by men and women who understand the ground they stand on.</p>
-    <div class="btn-group" style="justify-content:flex-start; margin-top:0.5rem;">
+    <div class="btn-group is-start is-tight">
       <a href="leadership.html" class="btn btn-outline">See the Ranks and Offices</a>
     </div>
   </div>
@@ -189,8 +190,8 @@
 <section class="section-alt">
   <div class="section-inner narrow text-center">
     <div class="ornament">✦ ✦ ✦</div>
-    <p style="color:var(--text-muted); font-size:0.95rem;">The boundaries of the provinces, and the districts within them, are established by the General Council and may be altered as the Order grows. Members are attached to the province in which they reside.</p>
-    <p style="color:var(--text-muted); font-size:0.95rem;">To ask which district or commandery serves your area, write to us.</p>
+    <p class="note">The boundaries of the provinces, and the districts within them, are established by the General Council and may be altered as the Order grows. Members are attached to the province in which they reside.</p>
+    <p class="note">To ask which district or commandery serves your area, write to us.</p>
   </div>
 </section>
 
@@ -212,17 +213,17 @@
     <span class="footer-name">Ordo Militantium Reginae Caeli &mdash; OMRC</span>
     <p>Collegium Reginae Caeli &bull; <em>Sub tuum Praesidium</em></p>
     <ul class="footer-links">
-      <li><a href="index.html">Home</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="about.html">About</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="leadership.html">Leadership</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="Provinces.html">Provinces</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="constitution.html">Constitution</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="healthcare.html">Healthcare</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="education.html">Education</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="faith.html">Faith</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="fraternity.html">Fraternity</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="shop.html">Shop</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="apply.html">Apply</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="Provinces.html">Provinces</a></li>
+      <li><a href="constitution.html">Constitution</a></li>
+      <li><a href="healthcare.html">Healthcare</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="faith.html">Faith</a></li>
+      <li><a href="fraternity.html">Fraternity</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="apply.html">Apply</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>

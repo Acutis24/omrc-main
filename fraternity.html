@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="The Fraternity Apostolate of the Ordo Militantium Reginae Caeli — brotherhood lived in charity, faithfulness, and service to the communities that formed us."/>
   <title>Fraternity Apostolate &mdash; OMRC</title>
   <link rel="icon" type="image/png" href="favicon.png"/>
   <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
-  <link rel="stylesheet" href="style.css?v=2"/>
+  <link rel="stylesheet" href="style.css?v=6"/>
 </head>
 <body>
 
@@ -16,8 +17,8 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li class="has-menu">
-        <button type="button" class="nav-top" aria-expanded="false" aria-haspopup="true">The Order <span class="caret">▾</span></button>
-        <ul class="nav-menu">
+        <button type="button" class="nav-top" aria-expanded="false" aria-controls="nav-order">The Order <span class="caret">▾</span></button>
+        <ul class="nav-menu" id="nav-order">
           <li><a href="about.html">About the Order</a></li>
           <li><a href="leadership.html">Leadership</a></li>
           <li><a href="Provinces.html">Provinces</a></li>
@@ -27,8 +28,8 @@
         </ul>
       </li>
       <li class="has-menu">
-        <button type="button" class="nav-top active" aria-expanded="false" aria-haspopup="true">Apostolates <span class="caret">▾</span></button>
-        <ul class="nav-menu">
+        <button type="button" class="nav-top active" aria-expanded="false" aria-controls="nav-apostolates">Apostolates <span class="caret">▾</span></button>
+        <ul class="nav-menu" id="nav-apostolates">
           <li><a href="healthcare.html">Healthcare</a></li>
           <li><a href="education.html">Education</a></li>
           <li><a href="faith.html">Faith &amp; Publishing</a></li>
@@ -62,7 +63,7 @@
     <span class="section-label">Faithful, Charitable, Philanthropic</span>
     <h2>Brotherhood Turned Outward</h2>
     <p>A fraternity that exists only for itself curdles. Ours is ordered outward from the beginning: to the campus, to the parish, to the town, and to the society that surrounds it. Members give their labour, their means, and their time to works of charity and philanthropy, and they do it under their own name, in the open, as Catholics.</p>
-    <p>The three marks we hold ourselves to are simple. <strong style="color:var(--white)">Faithful</strong> &mdash; to Christ, to His Church, to Our Lady, and to one another. <strong style="color:var(--white)">Charitable</strong> &mdash; in deed before word, beginning with the brother beside you and reaching to the stranger. <strong style="color:var(--white)">Philanthropic</strong> &mdash; giving back to the communities that formed us, and to a society that has forgotten how to ask.</p>
+    <p>The three marks we hold ourselves to are simple. <strong>Faithful</strong> &mdash; to Christ, to His Church, to Our Lady, and to one another. <strong>Charitable</strong> &mdash; in deed before word, beginning with the brother beside you and reaching to the stranger. <strong>Philanthropic</strong> &mdash; giving back to the communities that formed us, and to a society that has forgotten how to ask.</p>
     <blockquote>
       "Bear ye one another&rsquo;s burdens; and so you shall fulfil the law of Christ."
       <cite>&mdash; Galatians 6:2</cite>
@@ -97,17 +98,17 @@
     <span class="footer-name">Ordo Militantium Reginae Caeli &mdash; OMRC</span>
     <p>Collegium Reginae Caeli &bull; <em>Sub tuum Praesidium</em></p>
     <ul class="footer-links">
-      <li><a href="index.html">Home</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="about.html">About</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="leadership.html">Leadership</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="Provinces.html">Provinces</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="constitution.html">Constitution</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="healthcare.html">Healthcare</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="education.html">Education</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="faith.html">Faith</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="fraternity.html">Fraternity</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="shop.html">Shop</a></li><li><span class="footer-divider">&bull;</span></li>
-      <li><a href="apply.html">Apply</a></li><li><span class="footer-divider">&bull;</span></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="Provinces.html">Provinces</a></li>
+      <li><a href="constitution.html">Constitution</a></li>
+      <li><a href="healthcare.html">Healthcare</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="faith.html">Faith</a></li>
+      <li><a href="fraternity.html">Fraternity</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="apply.html">Apply</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
