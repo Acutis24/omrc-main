@@ -14,7 +14,10 @@
 <nav>
   <div class="nav-inner">
     <a href="index.html" class="nav-brand"><img src="logo.png" alt="OMRC"/> OMRC</a>
-    <ul class="nav-links">
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li class="has-menu">
         <button type="button" class="nav-top active" aria-expanded="false" aria-controls="nav-order">The Order <span class="caret">▾</span></button>

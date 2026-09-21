@@ -92,6 +92,35 @@ nav {
   gap: 0.75rem;
 }
 .nav-brand img { height: 34px; width: auto; }
+
+/* Menu button. Hidden above the breakpoint, where the links sit in one row. */
+.nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 34px;
+  background: none;
+  border: 1px solid var(--border-bright);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+.nav-toggle:hover { color: var(--text-strong); border-color: var(--blue); }
+.nav-toggle-bars, .nav-toggle-bars::before, .nav-toggle-bars::after {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+}
+.nav-toggle-bars { position: relative; }
+.nav-toggle-bars::before, .nav-toggle-bars::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+.nav-toggle-bars::before { top: -6px; }
+.nav-toggle-bars::after  { top: 6px; }
 .nav-links {
   display: flex;
   gap: 0;
@@ -827,6 +856,15 @@ blockquote cite {
 .nav-menu a.active { color: var(--gold); }
 
 @media (max-width: 820px) {
+  /* Seven links wrap to four rows here, and the bar is sticky, so left
+     expanded they would follow the reader down every page. Collapse them
+     behind the menu button instead. */
+  .nav-toggle { display: inline-flex; }
+  .nav-links { display: none; width: 100%; flex-direction: column; padding-bottom: 0.5rem; }
+  .nav-inner.is-open .nav-links { display: flex; }
+  .nav-links > li { width: 100%; }
+  .nav-links a, .nav-top { display: flex; width: 100%; padding: 0.7rem 0; }
+  .nav-links a::after, .nav-top::after { left: 0; right: auto; width: 1.8rem; }
   .nav-menu {
     position: static;
     opacity: 1;
@@ -842,8 +880,6 @@ blockquote cite {
   }
   .has-menu.is-open > .nav-menu { display: block; }
   .nav-inner { flex-wrap: wrap; }
-  .nav-links { width: 100%; }
-  .nav-links li.has-menu { width: 100%; }
 }
 
 /* ── Clickable cards ─────────────────── */
@@ -1029,6 +1065,10 @@ footer p { color: var(--text-dim); font-size: var(--fs-xs); margin: 0; }
 @media (max-width: 600px) {
   .section, .section-alt { padding: 3.5rem 1.2rem; }
   .welcome-box { padding: 2rem 1.5rem; }
+  /* The oversized quote glyph is absolutely positioned and overlapped the
+     first line once the box narrowed; shrink it and drop the text indent. */
+  .welcome-box::before { font-size: 2rem; top: 1rem; left: 1.1rem; }
+  .welcome-box p, .welcome-sig { padding-left: 0; }
   .hero { min-height: auto; padding: 4rem 1.2rem 5rem; }
 }
 
