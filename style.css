@@ -1016,6 +1016,136 @@ a.card-link:hover .card-more { color: var(--gold); }
   color: var(--text-dim);
 }
 
+/* ── Announcements ───────────────────────────────────── */
+.announcement-banner {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  border-top: 2px solid var(--gold);
+}
+.announcement-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.85rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.announcement-label {
+  font-family: 'Cinzel', serif;
+  font-size: var(--fs-5xs);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+.announcement-text {
+  margin: 0;
+  flex: 1;
+  min-width: 12rem;
+  font-size: var(--fs-sm);
+  line-height: 1.6;
+}
+.announcement-text strong { color: var(--text-strong); }
+.announcement-more {
+  font-family: 'Cinzel', serif;
+  font-size: var(--fs-5xs);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+.announcement-more:hover { color: var(--gold); }
+.announcement-close {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 1.3rem;
+  line-height: 1;
+  padding: 0 0.2rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: color 0.2s;
+}
+.announcement-close:hover { color: var(--text-strong); }
+
+.announcement-list { margin-top: 2.5rem; }
+.announcement-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--gold);
+  padding: 1.6rem 1.8rem;
+  margin-bottom: 1.2rem;
+}
+.announcement-card:last-child { margin-bottom: 0; }
+.announcement-date {
+  display: block;
+  font-family: 'Cinzel', serif;
+  font-size: var(--fs-5xs);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 0.5rem;
+}
+.announcement-card h3 { margin: 0 0 0.6rem; font-size: var(--fs-md); }
+.announcement-card p { margin: 0; color: var(--text-muted); font-size: var(--fs-sm); line-height: 1.7; }
+.announcement-card .announcement-more { display: inline-block; margin-top: 0.9rem; }
+
+/* ── Prayers ─────────────────────────────────────────── */
+.prayer {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--blue);
+  padding: 1.8rem 2rem;
+  margin-bottom: 1.4rem;
+}
+.prayer:last-of-type { margin-bottom: 0; }
+.prayer h3 {
+  margin: 0 0 1rem;
+  font-size: var(--fs-md);
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+.prayer-latin-title {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: var(--fs-sm);
+  color: var(--gold);
+  text-transform: none;
+  letter-spacing: 0;
+}
+/* The prayers themselves stay in Latin; lang="la" tells screen readers and
+   hyphenation engines not to treat them as English. That tag also makes
+   EB Garamond swap u for v via its localised-forms feature -- correct for a
+   Roman inscription, wrong for a prayer being read -- so switch `locl` off. */
+.prayer-text {
+  font-feature-settings: "locl" 0;
+  margin: 0;
+  font-size: var(--fs-body);
+  line-height: 1.9;
+  color: var(--text);
+}
+.prayer-note {
+  margin: 1rem 0 0;
+  font-size: var(--fs-xs);
+  font-style: italic;
+  color: var(--text-muted);
+}
+.prayer-pending {
+  margin: 0;
+  font-style: italic;
+  color: var(--text-dim);
+}
+@media (max-width: 600px) {
+  .prayer { padding: 1.4rem 1.3rem; }
+  .announcement-inner { padding: 0.8rem 1.2rem; }
+}
+
 /* ── Footer ──────────────────────────────────────────── */
 footer {
   background: var(--bg-card);
