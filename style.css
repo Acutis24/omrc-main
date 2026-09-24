@@ -709,6 +709,17 @@ blockquote cite {
 .form-status.is-error { border-left-color: #B3452F; color: #E09A8B; }
 .btn:disabled { opacity: 0.5; cursor: not-allowed; box-shadow: none; }
 .honeypot { display: none !important; }
+.form-consent {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin: 0 0 1.4rem;
+}
+/* Marks a passage the Order must complete before this page is relied upon. */
+.pending-field {
+  color: var(--gold);
+  font-style: italic;
+}
 
 /* ── Contact grid ────────────────────────────────────── */
 .contact-grid {
@@ -927,6 +938,12 @@ a.card-link:hover .card-more { color: var(--gold); }
   margin-bottom: 1.8rem;
 }
 .province-card:last-child { margin-bottom: 0; }
+/* Each province's colour, carried as a custom property the card reads for its
+   top border and swatch. Kept here rather than in a style attribute so the
+   Content-Security-Policy need not allow inline styles. */
+.prov-western  { --prov: #38867C; }
+.prov-eastern  { --prov: #55649B; }
+.prov-southern { --prov: #AF4239; }
 .province-head {
   display: flex;
   align-items: baseline;

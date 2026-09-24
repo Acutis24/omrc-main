@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://reginaecaeli.com/Provinces.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -12,12 +12,12 @@
   </url>
   <url>
     <loc>https://reginaecaeli.com/announcements.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://reginaecaeli.com/apply.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
@@ -27,32 +27,32 @@
   </url>
   <url>
     <loc>https://reginaecaeli.com/constitution.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://reginaecaeli.com/contact.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://reginaecaeli.com/education.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://reginaecaeli.com/faith.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://reginaecaeli.com/fraternity.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://reginaecaeli.com/healthcare.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -62,22 +62,27 @@
   </url>
   <url>
     <loc>https://reginaecaeli.com/leadership.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://reginaecaeli.com/patroness.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://reginaecaeli.com/prayers.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://reginaecaeli.com/privacy.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://reginaecaeli.com/shop.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>
