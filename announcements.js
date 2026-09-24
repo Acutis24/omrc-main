@@ -20,6 +20,15 @@
 
   var ANNOUNCEMENTS = [
     {
+      date: '2026-09-24',
+      title: 'Blessed Fulton J. Sheen',
+      body: 'The Co-Patron of the Order was beatified on 24 September 2026 at ' +
+            'the Dome at America’s Center in St. Louis, Missouri, by Cardinal ' +
+            'Luis Antonio Tagle as legate of Pope Leo XIV. His feast is kept on ' +
+            '9 December. Blessed Fulton J. Sheen, pray for us.',
+      link: 'co-patron.html'
+    },
+    {
       date: '2026-09-14',
       title: 'The Collegium Shop Opens Soon',
       body: 'The Collegium Reginae Caeli is preparing its online shop, where ' +
